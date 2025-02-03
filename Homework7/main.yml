@@ -1,0 +1,8 @@
+- hosts: all
+  become: yes
+  tasks:
+  - name: Install httpd
+    ansible.builtin.dnf:
+      name: httpd
+      state: present
+      update_cache: yes
