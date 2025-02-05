@@ -1,7 +1,7 @@
 [ec2]
-vm1 ansible_host=18.223.237.156
-vm2 ansible_host=18.227.81.91
-vm3 ansible_host=3.133.147.54
+vm1 ansible_host=3.137.166.20
+vm2 ansible_host=18.226.172.71
+vm3 ansible_host=3.133.108.17
 
 [all:vars]
 ansible_user=ec2-user

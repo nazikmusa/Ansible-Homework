@@ -6,3 +6,24 @@
       name: httpd
       state: present
       update_cache: yes
+
+  - name: Start service httpd, if not started
+    ansible.builtin.service:
+      name: httpd
+      state: started
+      enabled: yes
+
+  - name: Enable service httpd
+    ansible.builtin.service:
+      name: httpd
+      enabled: yes
+
+  - name: Create users 
+    ansible.builtin.user:
+      name: "{{ item }}"
+    loop:  
+        - jenny
+        - rose
+        - jisoo
+        - lisa
+     
